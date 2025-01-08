@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ScrapMate est une extension automatisant le scrapping de contenu HMTL">
+  <meta name="technologies" content="Extension développée en JavaScript vanilla, HTML5/CSS3, Python, Flask">
+  <meta name="authors" content="Emmanuel Lefevre">
+  <meta name="keywords" content="Scrapping, HTML, automatisation, Google Chrome">
+  <meta name="theme-color" content="#008080">
+
+  <link rel="stylesheet" href="/src/assets/css/styles.css">
+  <link rel="stylesheet" href="/src/assets/css/animations.css">
+
+  <title>ScrapMate</title>
+</head>
+
+<body>
+  <div class="scrapmate-app">
+    <main>
+
+      <div class="scrapmate-app-content">
+        <div class="scrapmate-content">
+
+          <div class="h1-container">
+            <h1 class="scrapmate-title">Scrapmate</h1>
+          </div>
+          <img src="/src/assets/logo/logo.png"
+               class="scrapmate-logo"
+               alt="Logo de ScrapMate, l'extension de scrapping HTML">
+
+          <!-- Formulaire de scrapping -->
+          <form id="scrapping-form"
+                method="post"
+                novalidate>
+            <div class="scrapping-btn-container">
+              <div class="rotating-border-line"></div>
+              <button type="submit"
+                      id="scrapping-btn"
+                      aria-label="Scrapper la page HTML">Scrapper
+              </button>
+            </div>
+          </form>
+
+        </div> <!-- scrapmate-content -->
+      </div> <!-- scrapmate-app-content -->
+
+    </main>
+  </div> <!-- scrapmate-app -->
+
+  <script defer src="/src/popup/popup.js"></script>
+
+</body>
+</html>
