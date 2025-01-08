@@ -5,8 +5,8 @@
 - [CHROME EXTENSIONS SETTINGS](#chrome-extensions-settings)
 - [API](#api)
   - [Installer Python](#installer-python)
-  - [Requirements](#requirements)
-  - [Procedure](#procedure)
+  - [Librairies](#librairies)
+  - [Installation](#installation)
 - [LIENS UTILES](#liens-utiles)
 
 ## INTRODUCTION
@@ -54,26 +54,26 @@ python --version
 ```bash
 pip --version
 ```
-### Requirements
+### Librairies
 - Flask
 - Beautifulsoup4
 - Requests
-- Dotenv
+- Python-dotenv
 
-### Procedure
+### Installation
 1. Installer les librairies (en local dans python)
 ```bash
 pip install -r api/requirements.txt
 ```
-Vérifier l'installation des librairies
+2. Vérifier l'installation des librairies
 ```bash
 pip list
 ```
-2. Créer un .env à partir du .env.template et changer **MANUELLEMENT** les valeurs pertinentes
+3. Créer un .env à partir du .env.template et changer **MANUELLEMENT** les valeurs pertinentes
 ```bash
 cp api/.env.template api/.env
 ```
-3. Lancer l'application python
+4. Lancer l'application python
 ```bash
 python api/app.py
 ```
