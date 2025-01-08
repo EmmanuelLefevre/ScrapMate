@@ -2,11 +2,11 @@
 
 ## SOMMAIRE
 - [INTRODUCTION](#introduction)
-- [CHROME EXTENSIONS SETTINGS](#chrome-extensions-settings)
 - [API](#api)
   - [Installer Python](#installer-python)
   - [Librairies](#librairies)
   - [Installation](#installation)
+- [CHROME EXTENSIONS SETTINGS](#chrome-extensions-settings)
 - [LIENS UTILES](#liens-utiles)
 
 ## INTRODUCTION
@@ -14,6 +14,41 @@ Dans un monde numérique où l'information en ligne est omniprésente, l'accès 
 L'objectif principal de cette extension est de permettre aux utilisateurs d'extraire rapidement des données brutes ou structurées depuis n'importe quelle page web. ScrapMate offre un gain de temps considérable en rendant le scraping accessible, même pour les utilisateurs ayant peu ou pas d'expérience technique.  
 Grâce à ScrapMate, l'utilisateur peut exporter les données dans le format JSON, le tout directement depuis son navigateur.  
 En un simple clic, ScrapMate transforme la complexité du scraping en une opération rapide, pratique et sans effort.  
+
+## API
+### Installer Python
+[Télécharger Python 3.13.1](https://www.python.org/downloads/)
+
+- Vérifier l'installation de Python
+```bash
+python --version
+```
+- Vérifier l'installation de Pip
+```bash
+pip --version
+```
+### Librairies
+- Flask
+- Beautifulsoup4
+- Requests
+
+### Installation
+1. Installer les librairies (en local dans python)
+```bash
+pip install -r api/requirements.txt
+```
+2. Vérifier l'installation des librairies
+```bash
+pip list
+```
+3. Créer un .env à partir du .env.template et changer **MANUELLEMENT** les valeurs pertinentes
+```bash
+cp api/.env.template api/.env
+```
+4. Lancer l'application python
+```bash
+python api/app.py
+```
 
 ## CHROME EXTENSIONS SETTINGS
 1. Activer mode développeur
@@ -41,42 +76,6 @@ chrome-extension://mphajpdnlknfhohmjkdkljjjkgdfello
 6. Accéder aux requêtes réseau du service worker
 
 ![Chrome extension requête](https://github.com/EmmanuelLefevre/MarkdownImg/blob/main/chrome_extension_requête.png)
-
-## API
-### Installer Python
-[Télécharger Python 3.13.1](https://www.python.org/downloads/)
-
-- Vérifier l'installation de Python
-```bash
-python --version
-```
-- Vérifier l'installation de Pip
-```bash
-pip --version
-```
-### Librairies
-- Flask
-- Beautifulsoup4
-- Requests
-- Python-dotenv
-
-### Installation
-1. Installer les librairies (en local dans python)
-```bash
-pip install -r api/requirements.txt
-```
-2. Vérifier l'installation des librairies
-```bash
-pip list
-```
-3. Créer un .env à partir du .env.template et changer **MANUELLEMENT** les valeurs pertinentes
-```bash
-cp api/.env.template api/.env
-```
-4. Lancer l'application python
-```bash
-python api/app.py
-```
 
 ## LIENS UTILES
 [Chrome extension documentation](https://developer.chrome.com/docs/extensions/reference?hl=fr)  
