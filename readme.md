@@ -29,6 +29,7 @@ pip --version
 ```
 ### Librairies
 - Flask
+- Flask-cors
 - Beautifulsoup4
 - Requests
 
