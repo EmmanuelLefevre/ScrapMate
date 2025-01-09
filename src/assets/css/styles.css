@@ -43,7 +43,7 @@
     --background-color: #f5f5f5;
 
     /*------Text------*/
-    --text-result-color: #004466;
+    --text-color: #004466;
 
     /*------Border------*/
     --border-width1: 1px;
@@ -53,32 +53,8 @@
     --hover-border-color: var(--primary-color);
 
     /*------Gradient------*/
-    --gradient-angle1: 180deg;
-    --gradient-angle2: 315deg;
-    --gradient1: var(--primary-color);
-    --gradient2: var(--fourth-color);
-    --start-position: 0%;
-    --end-position1: 150%;
-    --end-position2: 74%;
-    --button-gradient-effect: linear-gradient(var(--gradient-angle2), var(--gradient2) var(--start-position), var(--gradient1) var(--end-position2));
-    --h1-gradient-effect: linear-gradient(var(--gradient-angle1), var(--gradient1) var(--start-position), var(--gradient2) var(--end-position1));
 
     /*------Shadows------*/
-    --notifs-container-shadow-color: rgba(0, 0, 0, 0.6);
-    --button-shadow-color: rgba(0, 0, 0, 0.7);
-    --h1-shadow-color: rgba(0, 0, 0, 0.1);
-    --icon-shadow-color: rgba(0, 0, 0, 0.2);
-    --options-shadow-color: rgba(0, 0, 0, 0.7);
-    --select-shadow-color: rgba(0, 0, 0, 0.5);
-    --text-shadow-color: rgba(0, 0, 0, 0.2);
-
-    --notifs-container-shadow: 0px 11px 5px -8px var(--notifs-container-shadow-color);
-    --button-shadow: 0px 7px 6px -4px var(--button-shadow-color);
-    --h1-shadow: 3px 3px 0px var(--h1-shadow-color);
-    --icon-shadow: drop-shadow(2px 1px 0px var(--icon-shadow-color));
-    --options-shadow: 0px 7px 6px -4px var(--options-shadow-color);
-    --select-shadow: 0px 7px 6px -6px var(--select-shadow-color);
-    --text-shadow: 0px 2px 2px var(--text-shadow-color);
 
     /*------Fonts------*/
     --text: 'arial';
@@ -113,26 +89,7 @@ div.scrapmate-content {
   display: inline-block;
 }
 h1.scrapmate-title {
-  position: relative;
-  font-size: var(--font-size-h1);
-  font-weight: var(--text-weight-bold);
-  background: var(--h1-gradient-effect);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
   margin: 15px 0 20px 0;
-  z-index: 1;
-}
-h1.scrapmate-title.border-layer {
-  position: absolute;
-  color: transparent;
-  background: none;
-  top: 0;
-  left: 0;
-  -webkit-text-stroke: 1px var(--fourth-color);
-  text-shadow: var(--h1-shadow);
-  z-index: 0;
 }
 
 /*===============LOGO===============*/
