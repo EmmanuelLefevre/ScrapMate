@@ -12,7 +12,7 @@
 ## INTRODUCTION
 Dans un monde numérique où l'information en ligne est omniprésente, l'accès rapide et structuré aux données est devenu essentiel pour les développeurs, les analystes de données et les créateurs de contenu. C'est dans ce contexte qu'intervient ScrapMate, une extension Chrome conçue pour simplifier et automatiser le processus de récupération du contenu HTML d'une page web.  
 L'objectif principal de cette extension est de permettre aux utilisateurs d'extraire rapidement des données brutes ou structurées depuis n'importe quelle page web. ScrapMate offre un gain de temps considérable en rendant le scraping accessible, même pour les utilisateurs ayant peu ou pas d'expérience technique.  
-Grâce à ScrapMate, l'utilisateur peut exporter les données dans le format JSON, le tout directement depuis son navigateur.  
+Grâce à ScrapMate, l'utilisateur peut exporter les données dans le format CSV, le tout directement depuis son navigateur.  
 En un simple clic, ScrapMate transforme la complexité du scraping en une opération rapide, pratique et sans effort.  
 
 ## API
