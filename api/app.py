@@ -11,14 +11,13 @@ app = Flask(__name__)
 
 # Application de CORS (middleware)
 CORS(app, resources={
-    r"/api/scrap": {
-        "origins": "*",
-        "methods": ["POST"]
-    }
+  r"/api/scrap": {
+    "origins": "*",
+    "methods": ["POST"]
+  }
 })
 
 
 # Scrapper la page
-@app.route('/api/scrap', methods=['POST'])
-def scrap_page():
-  
+# @app.route('/api/scrap', methods=['POST'])
+# def scrap_page():
