@@ -28,14 +28,13 @@
     /*------Colors------*/
     --white: white;
     --black: black;
-    --primary-color: #008080;
+    --primary-color: #9fe855;
     --secondary-color: #209b87;
     --valid-color: #3cff00;
     --error-color: #fa0000;
 
     /*------Fonts size------*/
-    --font-size-body: 24px;
-    --font-size-button: 16px;
+    --font-size-button: 21px;
     --font-size-h1: 40px;
     --font-size-message: 12px;
 
@@ -64,6 +63,10 @@
 }
 
 /*===============APP===============*/
+main {
+  padding: 16px 12px;
+  background-color: var(--background-color);
+}
 div.scrapmate-app {
   font-family: var(--text) var(--text-serif);
   font-size: var(--font-size-body);
@@ -71,7 +74,7 @@ div.scrapmate-app {
   background-color: var(--background-color);
 }
 div.scrapmate-app-content {
-  width: 320px;
+  width: 200px;
   height: fit-content;
 }
 div.scrapmate-content {
@@ -80,7 +83,6 @@ div.scrapmate-content {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding-bottom: 15px;
 }
 
 /*===============H1===============*/
@@ -89,45 +91,36 @@ div.scrapmate-content {
   display: inline-block;
 }
 h1.scrapmate-title {
-  margin: 15px 0 20px 0;
+  margin: 15px 0;
 }
 
 /*===============LOGO===============*/
 
 
 /*===============BUTTON===============*/
-/* #scrapping-form {
-
-} */
 .scrapping-btn-container {
   display: block;
-  text-align: center;
   margin: auto;
-  background: #2c3e50;
-}
-/* button#scrapping-btn {
-
-} */
-.b-green, .b-green:before {
-  background: rgba(73,155,234,1);
-  background: linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
+  padding: 8px;
+  text-align: center;
 }
 .button {
-  display: inline-block;
   position: relative;
-  border-radius: 3px;
-  text-decoration: none;
-  padding: .5em;
-  margin: .5em;
-  font-size: 2em;
+  display: inline-block;
+  font-size: var(--font-size-button);
   font-weight: bold;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 10px;
   transition: all .5s;
   background-clip: text;
+  background: linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .button:hover {
   text-shadow: 0px 0px 0px rgba(255, 255, 255, .75);
+  cursor: pointer;
 }
 .button:hover:after {
   left: 100%;
@@ -143,9 +136,10 @@ h1.scrapmate-title {
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: -1;
   border-radius: 5px;
   transition: all .5s;
+  background: rgba(73,155,234,1);
+  z-index: -1;
 }
 .button:after {
   content: '';
@@ -155,9 +149,9 @@ h1.scrapmate-title {
   top: 2px;
   bottom: 2px;
   right: 2px;
-  z-index: -1;
   border-radius: 5px;
   transition: all .5s;
+  z-index: -1;
 }
 
 /*===============MESSAGE===============*/
