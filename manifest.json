@@ -11,9 +11,6 @@
   "optional_permissions": ["notifications"],
   "action": {
     "default_icon": {
-      "16": "src/assets/icons/logo_16.png",
-      "48": "src/assets/icons/logo_48.png",
-      "128": "src/assets/icons/logo_128.png"
     },
     "default_popup": "src/popup/popup.html",
     "default_title": "Cliquez ici pour scrapper le contenu HTML de la page"
@@ -40,15 +37,9 @@
       "css": [
         "src/assets/css/styles.css",
         "src/assets/css/animations.css"
-      ],
-      "js": [
-        "src/assets/js/browser.js"
       ]
     }
   ],
   "icons": {
-    "16": "src/assets/icons/logo_16.png",
-    "48": "src/assets/icons/logo_48.png",
-    "128": "src/assets/icons/logo_128.png"
   }
 }
