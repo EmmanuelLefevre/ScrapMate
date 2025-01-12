@@ -98,8 +98,6 @@ h1.scrapmate-title {
 img.scrapmate-logo {
   width: 125px;
   height: auto;
-  /* margin-bottom: 25px; */
-  fill: hue-rotate(70deg) saturate(2) brightness(0.9);
   /* animation: zoomIn 0.8s ease-out; */
 }
 
