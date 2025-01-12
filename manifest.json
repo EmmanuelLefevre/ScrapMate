@@ -11,6 +11,9 @@
   "optional_permissions": ["notifications"],
   "action": {
     "default_icon": {
+      "16": "src/assets/icons/scrapmate_16.png",
+      "48": "src/assets/icons/scrapmate_48.png",
+      "128": "src/assets/icons/scrapmate_128.png"
     },
     "default_popup": "src/popup/popup.html",
     "default_title": "Cliquez ici pour scrapper le contenu HTML de la page"
@@ -41,5 +44,8 @@
     }
   ],
   "icons": {
+    "16": "src/assets/icons/scrapmate_16.png",
+    "48": "src/assets/icons/scrapmate_48.png",
+    "128": "src/assets/icons/scrapmate_128.png"
   }
 }
