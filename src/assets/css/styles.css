@@ -95,7 +95,13 @@ h1.scrapmate-title {
 }
 
 /*===============LOGO===============*/
-
+img.scrapmate-logo {
+  width: 125px;
+  height: auto;
+  /* margin-bottom: 25px; */
+  fill: hue-rotate(70deg) saturate(2) brightness(0.9);
+  /* animation: zoomIn 0.8s ease-out; */
+}
 
 /*===============BUTTON===============*/
 .scrapping-btn-container {
@@ -104,7 +110,7 @@ h1.scrapmate-title {
   padding: 8px;
   text-align: center;
 }
-.button {
+.button#scrapping-btn {
   position: relative;
   display: inline-block;
   font-size: var(--font-size-button);
@@ -118,17 +124,17 @@ h1.scrapmate-title {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.button:hover {
+.button#scrapping-btn:hover {
   text-shadow: 0px 0px 0px rgba(255, 255, 255, .75);
   cursor: pointer;
 }
-.button:hover:after {
+.button#scrapping-btn:hover:after {
   left: 100%;
   top: 100%;
   bottom: 100%;
   right: 100%;
 }
-.button:before {
+.button#scrapping-btn:before {
   content: '';
   display: block;
   position: absolute;
@@ -141,7 +147,7 @@ h1.scrapmate-title {
   background: rgba(73,155,234,1);
   z-index: -1;
 }
-.button:after {
+.button#scrapping-btn:after {
   content: '';
   display: block;
   position: absolute;
