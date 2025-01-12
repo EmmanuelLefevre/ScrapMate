@@ -2,13 +2,12 @@
   "manifest_version": 3,
   "name": "ScrapMate",
   "version": "1.0",
-  "description": "Extension Chrome de scrapping HTML",
+  "description": "Extension Chrome de scrapping HTML en format CSV",
   "permissions": [
     "scripting",
     "tabs",
     "storage"
   ],
-  "optional_permissions": ["notifications"],
   "action": {
     "default_icon": {
       "16": "src/assets/icons/scrapmate_16.png",
